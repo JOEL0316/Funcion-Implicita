@@ -5,13 +5,14 @@
 % Date          :20211123
 % Version       :1
 % Usage         :octave> /path/F.Implicita
-% Notes         :Requiere aplicación octave y usar linea de comandos
+% Notes         :Requiere aplicaciÃ³n octave y usar linea de comandos
 
 % Limpiar variables
+pkg load symbolic
 clear
 syms x
 syms y
-% Función uno
+% FunciÃ³n uno
 subplot(2,2,1);
 ezplot ('(x^2+y^2-1)^3-(x^2*y^3)') ;
 
@@ -23,6 +24,6 @@ ezplot '(y^3-5*x^2+3*x*y^2+12)';
 subplot(2,2,3);
 ezplot('(x^2+y^2)^2 - 5*x*(x^2-3*y^2)');
 
-% Función cuatro
+% FunciÃ³n cuatro
 subplot(2,2,4);
 ezplot('x^2*sin(y)+x*y-1');
